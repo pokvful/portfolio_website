@@ -1,4 +1,4 @@
-baseURL = "pokvful.github.io"
+baseURL = "https://pokvful.github.io/"
 defaultContentLanguage = "en"
 languageCode = "en"
 title = "Portfolio | Tim Meuwsen"
