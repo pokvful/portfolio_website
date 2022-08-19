@@ -1,28 +1,7 @@
 baseURL = "https://pokvful.github.io/"
-defaultContentLanguage = "en"
-languageCode = "en"
+defaultContentLanguage = "nl"
 title = "Portfolio | Tim Meuwsen"
 theme = "gokarna"
-
-[menu]
-[[menu.main]]
-identifier = "about-me"
-name = "About"
-url = "/post/about-me"
-weight = 1
-
-[[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/post/projects"
-weight = 2
-
-[[menu.main]]
-identifier = "github"
-url = "https://github.com/pokvful"
-weight = 3
-
-pre = "<span data-feather='github'></span>"
 
 [params]
 avatarURL = "/photo_of_myself.jpg"
@@ -61,3 +40,45 @@ socialIcons = [
 showPostsOnHomePage = "recent"
 
 footer = "Tim Meuwsen"
+
+[languages]
+[languages.en]
+contentDir = "content/post/english"
+title = "Portfolio | Tim Meuwsen"
+languageName = "Translate to English"
+weight = 1
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = "about-me"
+name = "About"
+url = "/post/about-me"
+weight = 1
+[[languages.en.menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/post/projects"
+weight = 2
+[[languages.en.menu.main]]
+identifier = "github"
+url = "https://github.com/pokvful"
+weight = 3
+pre = "<span data-feather='github'></span>"
+[languages.nl]
+contentDir = "content/post/dutch"
+title = "Portfolio | Tim Meuwsen"
+languageName = "Vertaal naar Nederlands"
+weight = 2
+[languages.nl.menu]
+[[languages.nl.menu.main]]
+name = 'Over mij'
+url = '/post/about-me'
+weight = 1
+[[languages.nl.menu.main]]
+name = 'Projecten'
+url = '/post/projects'
+weight = 2
+[[languages.nl.menu.main]]
+identifier = "github"
+url = "https://github.com/pokvful"
+weight = 3
+pre = "<span data-feather='github'></span>"
