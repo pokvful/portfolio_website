@@ -11,7 +11,7 @@ type: "post"
 Built using:
 
 - Hugo
-- PaperMod
+- [Gokarna](https://github.com/526avijitgupta/gokarna)
 
 Link to [project](https://github.com/pokvful/portfolio_website)
 
@@ -21,7 +21,8 @@ An auction website I made with 4 other people. Goal of application was to be a l
 
 Built using:
 
-- PHP 7.0
+- PHP (Latte)
+- Bootstrap
 
 Link to [project](https://github.com/pokvful/I-project)
 
@@ -44,7 +45,8 @@ Built using:
 
 - Transact-SQL
 - Microsoft SQL Server 2019
+- MongoDB
 
 Link to [project](https://github.com/pokvful/football-league-manager)
 
-To learn more about myself see: [about](/post/about-me)
+To learn more about me see: [about](/post/about-me)
