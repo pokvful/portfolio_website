@@ -1,7 +1,10 @@
 ---
-title: "Projects I have worked on"
+title: "Projects"
 date: 2022-08-18T21:44:38+02:00
+type: "post"
 ---
+
+## Projects I have worked on
 
 ### This portfolio website
 
@@ -14,12 +17,11 @@ Link to [project](https://github.com/pokvful/portfolio_website)
 
 ### I-project
 
-An auction website I made with 4 other people. Goal of application was to be a look-alike of the popular auction website [Marktplaats](https://www.marktplaats.nl/)
+An auction website I made with 4 other people. Goal of application was to be a lookalike of the popular auction website [Marktplaats](https://www.marktplaats.nl/)
 
 Built using:
 
-- PHP 7.0 (Latte)
-- Bootstrap
+- PHP 7.0
 
 Link to [project](https://github.com/pokvful/I-project)
 
@@ -42,8 +44,7 @@ Built using:
 
 - Transact-SQL
 - Microsoft SQL Server 2019
-- MongoDB
 
 Link to [project](https://github.com/pokvful/football-league-manager)
 
-To learn more about me see: [about](/about/about-me)
+To learn more about myself see: [about](/post/about-me)

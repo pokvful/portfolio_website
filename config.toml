@@ -1,81 +1,57 @@
-baseURL = "https://pokvful.github.io/"
-title = "Portfolio"
-theme = "PaperMod"
+baseURL = "pokvful.github.io"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Portfolio | Tim Meuwsen"
+theme = "gokarna"
 
-[minify]
-disableXML = true
-minifyOutput = true
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about-me"
+    name = "About"
+    url = "/post/about-me"
+    weight = 1
+    
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/post/projects"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/pokvful"
+    weight = 3
+  
+    # We use feather-icons: https://feathericons.com/
+    pre = "<span data-feather='github'></span>"
 
 [params]
-env = "production"
-title = "Portfolio"
-description = "Portfolio"
-keywords = [ "Portfolio" ]
-DateFormat = "January 2, 2006"
-defaultTheme = "dark"
-disableThemeToggle = false
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = false
-ShowWordCount = true
-ShowRssButtonInSectionTermList = true
-UseHugoToc = true
-disableSpecial1stPost = false
-disableScrollToTop = false
-comments = false
-hidemeta = false
-hideSummary = false
-showtoc = false
-tocopen = false
+  # URL for the avatar on homepage
+  avatarURL = "/photo_of_myself.jpg"
 
-  [params.assets]
-  favicon = "/apple-touch-icon.png"
-  favicon16x16 = "<link / abs url>"
-  favicon32x32 = "<link / abs url>"
+  # Choose one of size-xs, size-s, size-m, size-l & size-xl. (Default: size-m)
+  avatarSize = "size-l"
 
-  [params.label]
-  text = "Portfolio"
-  icon = "/apple-touch-icon.png"
-  iconHeight = 35
+  # Description to display on homepage
+  description = "Hello 👋 I'm Tim, a 20 year old sofware developer from The Netherlands 🇳🇱"
 
-  [params.profileMode]
-  enabled = false
-  title = "/index/"
-  subtitle = "Photo of me"
-  imageUrl = "/static/photo_of_myself.jpg"
-  imageWidth = 120
-  imageHeight = 120
-  imageTitle = "This is me"
+  # Accent color is displayed when you hover over <a> tags
+  accentColor = "#FF4D4D"
 
-    [[params.profileMode.buttons]]
-    name = "Posts"
-    url = "posts"
+  # You can use this to inject any HTML in the <head> tag.
+  # Ideal usecase for this is to import custom js/css or add your analytics snippet
+  customHeadHTML = ""
 
-    [[params.profileMode.buttons]]
-    name = "Tags"
-    url = "tags"
+  # Keywords relevant for SEO
+  metaKeywords = ["portfolio", "hugo"]
 
-  [params.cover]
-  hidden = true
-  hiddenInList = true
-  hiddenInSingle = true
+  # If you want to display posts on the homepage, the options are
+  # "popular" (order posts by weight), "recent" (order posts by date)
+  # or "" (do not display, default option)
+  showPostsOnHomePage = "recent"
 
-[[menu.main]]
-identifier = "categories"
-name = "home"
-url = "/"
-weight = 10
-
-[[menu.main]]
-identifier = "about"
-name = "about"
-url = "/about/about-me"
-weight = 20
-
-[[menu.main]]
-identifier = "projects"
-name = "projects"
-url = "/projects/my-projects"
-weight = 30
+  # Footer text
+  footer = "Tim Meuwsen"

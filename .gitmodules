@@ -2,3 +2,6 @@
 	path = public
 	url = https://github.com/pokvful/pokvful.github.io.git
 	branch = main
+[submodule "themes/gokarna"]
+	path = themes/gokarna
+	url = https://github.com/526avijitgupta/gokarna
