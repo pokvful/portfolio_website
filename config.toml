@@ -5,39 +5,11 @@ theme = "gokarna"
 
 [params]
 avatarURL = "/photo_of_myself.jpg"
-
 avatarSize = "size-l"
-
-description = "Hello 👋 I'm Tim, a 20 year old sofware developer from The Netherlands 🇳🇱"
-
 accentColor = "#FF4D4D"
-
-customHeadHTML = """
-    <!-- KaTeX -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          // customised options
-          // • auto-render specific keys, e.g.:
-          delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false},
-          ],
-          // • rendering keys, e.g.:
-          throwOnError : false
-        });
-      });
-    </script>
-  """
-
 socialIcons = [
   { name = "linkedin", url = "https://www.linkedin.com/in/tim-meuwsen-6831aa193/" },
 ]
-
-showPostsOnHomePage = "recent"
 
 footer = "Tim Meuwsen"
 
@@ -47,38 +19,54 @@ contentDir = "content/post/english"
 title = "Portfolio | Tim Meuwsen"
 languageName = "Translate to English"
 weight = 1
+description = "Hello 👋 I'm Tim, a 20 year old sofware developer from The Netherlands 🇳🇱"
 [languages.en.menu]
+[[languages.en.menu.main]]
+name = 'Home'
+url = '/en'
+weight = 1
+pre = "<span data-feather='home'></span>"
 [[languages.en.menu.main]]
 identifier = "about-me"
 name = "About"
 url = "/en/about-me"
-weight = 1
+weight = 2
+pre = "<span data-feather='user'></span>"
 [[languages.en.menu.main]]
 identifier = "projects"
 name = "Projects"
 url = "/en/projects"
-weight = 2
+weight = 3
+pre = "<span data-feather='code'></span>"
 [[languages.en.menu.main]]
 identifier = "github"
 url = "https://github.com/pokvful"
-weight = 3
+weight = 4
 pre = "<span data-feather='github'></span>"
 [languages.nl]
 contentDir = "content/post/dutch"
 title = "Portfolio | Tim Meuwsen"
 languageName = "Vertaal naar Nederlands"
+description = "Hallo 👋 Ik ben Tim, 20 jaar en een software developer uit Nederland 🇳🇱"
 weight = 2
 [languages.nl.menu]
 [[languages.nl.menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
+pre = "<span data-feather='home'></span>"
+[[languages.nl.menu.main]]
 name = 'Over mij'
 url = '/about-me'
-weight = 1
+weight = 2
+pre = "<span data-feather='user'></span>"
 [[languages.nl.menu.main]]
 name = 'Projecten'
 url = '/projects'
-weight = 2
+weight = 3
+pre = "<span data-feather='code'></span>"
 [[languages.nl.menu.main]]
 identifier = "github"
 url = "https://github.com/pokvful"
-weight = 3
+weight = 4
 pre = "<span data-feather='github'></span>"

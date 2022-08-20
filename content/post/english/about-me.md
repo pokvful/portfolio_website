@@ -1,10 +1,8 @@
 ---
 title: "About Me"
 date: 2022-08-18T21:44:35+02:00
-type: "post"
+type: "page"
 ---
-
-## About myself
 
 My name is Tim, I am a motivated and passionate developer from The Netherlands. 
 

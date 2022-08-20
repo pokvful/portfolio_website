@@ -1,10 +1,8 @@
 ---
 title: "Over mij"
 date: 2022-08-18T21:44:35+02:00
-type: "post"
+type: "page"
 ---
-
-## Over mijzelf
 
 Mijn naam is Tim, ik ben een gemotiveerde en gepassioneerde software developer uit Nederland.
 
