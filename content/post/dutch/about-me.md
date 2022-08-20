@@ -6,7 +6,7 @@ type: "page"
 
 Mijn naam is Tim, ik ben een gemotiveerde en gepassioneerde software developer uit Nederland.
 
-Ik heb altijd van techniek gehouden sinds mijn 9e.
+Ik heb altijd van techniek gehouden sinds mijn 9de.
 
 Ik begon mijn reis in IT in Netwerkbeheer, na het behalen van mijn diploma kreeg ik het idee om te gaan programmeren.
 
