@@ -18,4 +18,6 @@ Right now I am in my third schoolyear and learning every day.
 
 My current passion lies in learning the programming language Rust; and building OO-applications with help of Java.
 
-If you're interested in projects I have been part of see: [projects](/projects)
+***
+
+*If you're interested in projects I have been part of see: [projects](/projects)*

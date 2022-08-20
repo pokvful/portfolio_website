@@ -18,5 +18,7 @@ Ik zit nu in mijn derde schooljaar en leer elke dag weer wat nieuws.
 
 Mijn huidige passie ligt bij het leren van de programmeertaal Rust; en het bouwen van OO-applicaties met behulp van Java.
 
-Als je geïnteresseerd bent in projecten waar ik deel van heb uitgemaakt zie: [projecten](/projects)
+***
+
+*Als je geïnteresseerd bent in projecten waar ik aan heb meegewerkt zie: [projecten](/projects)*
 

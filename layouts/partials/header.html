@@ -1,0 +1,62 @@
+<header class="header">
+    <nav class="header-nav">
+
+        <div class="nav-title">
+            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+        <div class="nav-links">
+            <div class="nav-link">
+                {{ if .Site.IsMultiLingual }}
+                {{ range $.Translations }}
+                <a title="{{ .Language.LanguageName }}" href="{{ .Permalink
+                    }}" aria-label="{{ i18n "ariaTranslation" }}{{
+                    .Language.LanguageName }}"> <span data-feather='globe'></span> {{ .Language.LanguageName }} &nbsp |</a>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ range .Site.Menus.main }}
+            <div class="nav-link">
+                <a href="{{ .URL | absURL }}">
+                    {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                </a>
+            </div>
+            {{ end }}
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span
+                    id="dark-theme-toggle-screen-reader-target"
+                    class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            <!-- For mobile -->
+            <ul class="nav-hamburger-list visibility-hidden">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL | absURL }}">
+                        {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML
+                        -}}
+                    </a>
+                </li>
+                {{ end }}
+                <li class="nav-item dark-theme-toggle">
+                    <span
+                        id="dark-theme-toggle-screen-reader-target"
+                        class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
