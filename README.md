@@ -2,4 +2,5 @@
 
 ## TODO
 
-- [ ] CV
+- [ ] Add CV
+- [x] Add favicon
