@@ -57,4 +57,4 @@ Gebouwd met behulp van:
 
 Link naar [project](https://github.com/pokvful/football-league-manager)
 
-Zie voor meer informatie over mij: [about](/post/about-me)
+Voor meer informatie over mijzelf zie: [Over mijzelf](/post/about-me)
