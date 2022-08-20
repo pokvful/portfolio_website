@@ -59,4 +59,4 @@ Link to [project](https://github.com/pokvful/football-league-manager)
 
 ***
 
-*To learn more about me see: [about me](/about-me)*
+*To learn more about me see: [about me](/en/about-me)*

@@ -20,4 +20,4 @@ My current passion lies in learning the programming language Rust; and building 
 
 ***
 
-*If you're interested in projects I have been part of see: [projects](/projects)*
+*If you're interested in projects I have been part of see: [projects](/en/projects)*
