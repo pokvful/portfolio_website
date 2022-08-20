@@ -57,4 +57,4 @@ Built using:
 
 Link to [project](https://github.com/pokvful/football-league-manager)
 
-To learn more about me see: [about](/post/about-me)
+To learn more about me see: [about](/about-me)
