@@ -40,6 +40,15 @@
 
             <!-- For mobile -->
             <ul class="nav-hamburger-list visibility-hidden">
+                <div class="nav-item">
+                    {{ if .Site.IsMultiLingual }}
+                    {{ range $.Translations }}
+                    <a title="{{ .Language.LanguageName }}" href="{{ .Permalink
+                        }}" aria-label="{{ i18n "ariaTranslation" }}{{
+                        .Language.LanguageName }}"> <span data-feather='globe'></span> {{ .Language.LanguageName }}</a>
+                </div>
+                {{ end }}
+                {{ end }}
                 {{ range .Site.Menus.main }}
                 <li class="nav-item">
                     <a href="{{ .URL | absURL }}">
