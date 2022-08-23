@@ -1,58 +1,67 @@
 {{ define "main" }}
-<section class="home-about">
-	<div class="avatar">
-		{{ if isset .Site.Params "avatarurl" }} <img class={{
-		.Site.Params.AvatarSize | default "size-m" }} src='{{ .Site.BaseURL }}{{
-		.Site.Params.AvatarURL }}'> {{ end }}
+<div class="home-position">
+	<section class="home-about">
+		<div class="avatar">
+			{{ if isset .Site.Params "avatarurl" }} <img class={{
+			.Site.Params.AvatarSize | default "size-m" }} src='{{ .Site.BaseURL
+			}}{{ .Site.Params.AvatarURL }}'> {{ end }}
+		</div>
+		<h1>{{ .Site.Title }}</h1>
+		<h3>{{ .Site.Params.Description }}</h3>
+	</section>
+
+	<div class="flex-break"></div>
+
+	<hr />
+
+	{{ if eq .Site.Language.Lang "en" }}
+	<section class="home-content">
+		<p>
+			If you're interested in projects I have been part of see:
+			<a href="/en/projects">projects</a>
+		</p>
+		<p>
+			To learn more about myself see: <a href="/en/about-me">about me</a>
+		</p>
+	</section>
+	{{ else }}
+	<section class="home-content">
+		<p>
+			Als je geïnteresseerd bent in projecten waar ik aan heb meegewerkt
+			zie:
+			<a href="/projects">projecten</a>
+		</p>
+		<p>
+			Voor meer informatie over mijzelf zie:
+			<a href="/about-me">over mij</a>
+		</p>
+	</section>
+	{{ end }} {{ if isset .Site.Params "showpostsonhomepage" }}
+	<div class="home-posts list-posts">
+		<h2>{{ .Site.Params.ShowPostsOnHomePage | humanize }} Posts</h2>
+
+		{{ $posts := where .Site.Pages "Params.type" "post" }} {{ if eq
+		.Site.Params.ShowPostsOnHomePage "popular" }} {{ range $posts.ByWeight |
+		first 4 }} {{- partial "list-posts.html" . -}} {{ end }} {{ else if eq
+		.Site.Params.ShowPostsOnHomePage "recent" }} {{ range
+		$posts.ByDate.Reverse | first 4 }} {{- partial "list-posts.html" . -}}
+		{{ end }} {{ end }}
 	</div>
-	<h1>{{ .Site.Title }}</h1>
-	<h3>{{ .Site.Params.Description }}</h3>
-</section>
 
-<div class="flex-break"></div>
-
-{{ if isset .Site.Params "socialicons" }}
-<section class="social-icons">
-	<ul class="social-icons-list">
-		{{ range .Site.Params.SocialIcons }}
-		<li class="social-icon">
-			<a href="{{ .url }}">
-				<img
-					class="svg-inject"
-					src="{{ .Site.BaseURL }}/icons/{{ .name }}.svg"
-				/>
-			</a>
-		</li>
-		{{ end }}
-	</ul>
-</section>
-{{ end }} {{ if eq .Site.Language.Lang "en" }}
-<section class="home-content">
-	<p>
-		If you're interested in projects I have been part of see:
-		<a href="/en/projects">projects</a>
-	</p>
-	<p>To learn more about myself see: <a href="/en/about-me">about me</a></p>
-</section>
-{{ else }}
-<section class="home-content">
-	<p>
-		Als je geïnteresseerd bent in projecten waar ik aan heb meegewerkt zie:
-		<a href="/projects">projecten</a>
-	</p>
-	<p>
-		Voor meer informatie over mijzelf zie: <a href="/about-me">over mij</a>
-	</p>
-</section>
-{{ end }} {{ if isset .Site.Params "showpostsonhomepage" }}
-<div class="home-posts list-posts">
-	<h2>{{ .Site.Params.ShowPostsOnHomePage | humanize }} Posts</h2>
-
-	{{ $posts := where .Site.Pages "Params.type" "post" }} {{ if eq
-	.Site.Params.ShowPostsOnHomePage "popular" }} {{ range $posts.ByWeight |
-	first 4 }} {{- partial "list-posts.html" . -}} {{ end }} {{ else if eq
-	.Site.Params.ShowPostsOnHomePage "recent" }} {{ range $posts.ByDate.Reverse
-	| first 4 }} {{- partial "list-posts.html" . -}} {{ end }} {{ end }}
+	{{ end }} {{ if isset .Site.Params "socialicons" }}
+	<section class="social-icons">
+		<ul class="social-icons-list">
+			{{ range .Site.Params.SocialIcons }}
+			<li class="social-icon">
+				<a href="{{ .url }}">
+					<img
+						class="svg-inject"
+						src="{{ .Site.BaseURL }}/icons/{{ .name }}.svg"
+					/>
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+	</section>
 </div>
-
 {{ end }} {{ end }}
