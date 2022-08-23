@@ -4,7 +4,7 @@ date: 2022-08-18T21:44:38+02:00
 type: "page"
 ---
 
-## Deze portfoliowebsite
+## Deze portfolio website
 
 ![Screenshot van portfolio frontend](/website.png)
 
