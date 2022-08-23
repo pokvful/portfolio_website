@@ -10,9 +10,26 @@
 		<h3>{{ .Site.Params.Description }}</h3>
 	</section>
 
-	<div class="flex-break"></div>
+	<div class="tech-stack">
+		<h3>💻 Tech Stack:</h3>
 
-	<hr />
+		<p>
+			<img
+				src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=java&amp;logoColor=white"
+				alt="Java"
+			/>
+			<img
+				src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white"
+				alt="TypeScript"
+			/>
+			<img
+				src="https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&amp;logo=microsoft%20sql%20server&amp;logoColor=white"
+				alt="MicrosoftSQLServer"
+			/>
+		</p>
+	</div>
+
+	<hr class="tech-hr" />
 
 	{{ if eq .Site.Language.Lang "en" }}
 	<section class="home-content">
