@@ -19,7 +19,7 @@ contentDir = "content/post/english"
 title = "Portfolio | Tim Meuwsen"
 languageName = "Translate to English"
 weight = 1
-description = "Hello 👋 I'm Tim, a 20 year old sofware developer from The Netherlands 🇳🇱"
+description = "Hello 👋 I'm Tim, a 21 year old sofware developer from The Netherlands 🇳🇱"
 [languages.en.menu]
 [[languages.en.menu.main]]
 name = 'Home'
@@ -47,7 +47,7 @@ pre = "<span data-feather='github'></span>"
 contentDir = "content/post/dutch"
 title = "Portfolio | Tim Meuwsen"
 languageName = "Vertaal naar Nederlands"
-description = "Hallo 👋 Ik ben Tim, 20 jaar en een software developer uit Nederland 🇳🇱"
+description = "Hallo 👋 Ik ben Tim, 21 jaar en een software developer uit Nederland 🇳🇱"
 weight = 2
 [languages.nl.menu]
 [[languages.nl.menu.main]]
